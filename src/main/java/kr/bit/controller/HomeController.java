@@ -18,7 +18,7 @@ public class HomeController {
 	
 	
 	/**
-	 * Simply selects the home view to render by returning its name. test test 33
+	 * Simply selects the home view to render by returning its name. test tes
 	 */
 	@RequestMapping("/")
 	public String home(Locale locale, Model model) {
