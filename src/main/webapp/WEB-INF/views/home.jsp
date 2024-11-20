@@ -10,5 +10,17 @@
 </h1>
 
 <P>  The time on the server is ${serverTime}. </P>
+
+<!-- **JSTL **
+<form action="<c:url value='/test'/>" method="get">
+    <input type="submit" value="Go to Test Page">
+</form>
+-->
+
+<!-- EL(Expression Language)-->
+<form action="${pageContext.request.contextPath}/test" method="get">
+    <input type="submit" value="Go to Test Page">
+</form>
+
 </body>
 </html>

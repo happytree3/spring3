@@ -18,7 +18,7 @@ public class HomeController {
 	
 	
 	/**
-	 * Simply selects the home view to render by returning its name. test tes
+	 * Simply selects the home view to render by returning its name. test tesddd
 	 */
 	@RequestMapping("/")
 	public String home(Locale locale, Model model) {
@@ -31,6 +31,11 @@ public class HomeController {
 		model.addAttribute("serverTime", formattedDate );
 		
 		return "home"; //home.jsp
+	}
+	
+	@RequestMapping("/test")
+	public String test() {
+		return "test"; // test.jsp
 	}
 	
 }
